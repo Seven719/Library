@@ -1,0 +1,23 @@
+:root {
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background: orange;
+}
+
+body {
+    display: grid;
+    grid-template: 0.5fr 4fr 0.3fr / auto;
+    height: 100vh;
+}
+
+p {
+    font-size: 20px;
+}
+
+main {
+    display: grid;
+    grid-template: 0.5fr 3fr / 1fr;
+}
