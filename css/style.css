@@ -1,9 +1,9 @@
-:root {
+* {
+    padding: 0;
+    margin: 0;
 }
 
 body {
-    padding: 0;
-    margin: 0;
     background: orange;
 }
 
@@ -12,19 +12,18 @@ p {
 }
 
 main {
-    /* margin: auto; */
+    max-width: 1080px;
+    margin: auto;
 }
 
 .cards-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
 
 .card {
     height: 270px;
-    width: 300px;
     background: white;
     display: grid;
     grid-template-rows: 0.5fr 1fr;
@@ -39,7 +38,7 @@ main {
 }
 
 .card-text > p {
-    margin: 14px;
+    margin: 10px;
 }
 
 .card-btns {
