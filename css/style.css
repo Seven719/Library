@@ -1,6 +1,15 @@
+:root {
+    font-family: 'Ubuntu', sans-serif;
+}
+
 * {
     padding: 0;
     margin: 0;
+}
+
+footer > h1,
+header > h1 {
+    font-family: 'Silkscreen', sans-serif;
 }
 
 body {
