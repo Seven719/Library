@@ -12,11 +12,18 @@ header > h1 {
     font-family: 'Silkscreen', sans-serif;
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
 body {
     background: orange;
 }
 
-p {
+p,
+button {
     font-size: 20px;
 }
 
@@ -27,12 +34,12 @@ main {
 
 .cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
 }
 
 .card {
-    height: 270px;
+    height: 250px;
     background: white;
     display: grid;
     grid-template-rows: 0.5fr 1fr;
@@ -56,9 +63,41 @@ main {
     gap: 15px;
 }
 
-.new-book {
+.add-book-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: safe center;
     margin-bottom: 20px;
+}
+
+button {
+    border-radius: 10px;
+    border: none;
+    transition: 0.2s;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.read {
+    background: limegreen;
+}
+
+.read:hover {
+    background: darkgreen;
+}
+
+.not-read {
+    background: red;
+}
+
+.not-read:hover {
+    background: darkred;
+}
+
+.add-book {
+    padding: 18px 37px;
+    font-size: 25px;
+    font-weight: 700;
 }
