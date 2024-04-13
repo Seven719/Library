@@ -18,98 +18,22 @@
             <div class="add-book-container">
                 <button class="add-book">Add Book</button> 
             </div>
+
             <div class="cards-container">
-                <div class="card">
-                    <div class="card-text">
-                        <p>something</p>
-                        <p>again</p>
-                        <p>boom</p> 
-                    </div>
-                    <div class="card-btns">
-                        <button class="read">abutton</button>
-                        <button class="remove">another button</button> 
-                    </div>
-                </div> 
-                <div class="card">
-                    <div class="card-text">
-                        <p>something</p>
-                        <p>again</p>
-                        <p>boom</p> 
-                    </div>
-                    <div class="card-btns">
-                        <button>abutton</button>
-                        <button>another button</button> 
-                    </div>
-                </div>
+            </div>
 
-                <!-- <div class="card"> -->
-                <!--     <div class="card-text"> -->
-                <!--         <p>something</p> -->
-                <!--         <p>again</p> -->
-                <!--         <p>boom</p> --> 
-                <!--     </div> -->
-                <!--     <div class="card-btns"> -->
-                <!--         <button>abutton</button> -->
-                <!--         <button>another button</button> --> 
-                <!--     </div> -->
-                <!-- </div> --> 
-                <!-- <div class="card"> -->
-                <!--     <div class="card-text"> -->
-                <!--         <p>something</p> -->
-                <!--         <p>again</p> -->
-                <!--         <p>boom</p> --> 
-                <!--     </div> -->
-                <!--     <div class="card-btns"> -->
-                <!--         <button>abutton</button> -->
-                <!--         <button>another button</button> --> 
-                <!--     </div> -->
-                <!-- </div> -->
-
-                <!-- <div class="card"> -->
-                <!--     <div class="card-text"> -->
-                <!--         <p>something</p> -->
-                <!--         <p>again</p> -->
-                <!--         <p>boom</p> --> 
-                <!--     </div> -->
-                <!--     <div class="card-btns"> -->
-                <!--         <button>abutton</button> -->
-                <!--         <button>another button</button> --> 
-                <!--     </div> -->
-                <!-- </div> --> 
-                <!-- <div class="card"> -->
-                <!--     <div class="card-text"> -->
-                <!--         <p>something</p> -->
-                <!--         <p>again</p> -->
-                <!--         <p>boom</p> --> 
-                <!--     </div> -->
-                <!--     <div class="card-btns"> -->
-                <!--         <button>abutton</button> -->
-                <!--         <button>another button</button> --> 
-                <!--     </div> -->
-                <!-- </div> -->
-
-                <!-- <div class="card"> -->
-                <!--     <div class="card-text"> -->
-                <!--         <p>something</p> -->
-                <!--         <p>again</p> -->
-                <!--         <p>boom</p> --> 
-                <!--     </div> -->
-                <!--     <div class="card-btns"> -->
-                <!--         <button>abutton</button> -->
-                <!--         <button>another button</button> --> 
-                <!--     </div> -->
-                <!-- </div> --> 
-                <!-- <div class="card"> -->
-                <!--     <div class="card-text"> -->
-                <!--         <p>something</p> -->
-                <!--         <p>again</p> -->
-                <!--         <p>boom</p> --> 
-                <!--     </div> -->
-                <!--     <div class="card-btns"> -->
-                <!--         <button>abutton</button> -->
-                <!--         <button>another button</button> --> 
-                <!--     </div> -->
-                <!-- </div> -->
+            <div class="add-book-modal">
+                <form class="add-book-form">
+                    <h3>Add new Book</h3>
+                    <input id="title" class="input" type="text" required maxlength="100" placeholder="Title"> 
+                    <input id="author" class="input" type="text" required maxlength="100" placeholder="Author">
+                    <input id="pages" class="input" type="number" required maxlength="10000" placeholder="Pages">
+                    <div class="isread">
+                        <label for="is-read">Have you read it?</label>
+                        <input id="isRead" type="checkbox">
+                    </div>
+                    <button id="form-submit" type="submit">Submit</button>
+                </form>
             </div>
         </main>
         <footer>
