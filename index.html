@@ -11,33 +11,44 @@
         <link href="https://fonts.googleapis.com/css2?family=Silkscreen&family=Ubuntu&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <h1>HEADER</h1>
-        </header>
-        <main>
-            <div class="add-book-container">
-                <button class="add-book">Add Book</button> 
+        <div class="add-book-container">
+            <button class="add-book">Add Book</button> 
+        </div>
+
+        <div class="cards-container"></div>
+
+        <dialog class="add-book-modal">
+            <div class="close-button-container">
+                <button class="close-modal">X</button>
             </div>
 
-            <div class="cards-container">
-            </div>
+            <form class="add-book-form">
+                <h3>Add new Book</h3>
+                <div class="txt_field">
+                    <input id="title" class="input" type="text" required maxlength="100"> 
+                    <span></span> 
+                    <label>Title</label>
+                </div>
 
-            <div class="add-book-modal">
-                <form class="add-book-form">
-                    <h3>Add new Book</h3>
-                    <input id="title" class="input" type="text" required maxlength="100" placeholder="Title"> 
-                    <input id="author" class="input" type="text" required maxlength="100" placeholder="Author">
-                    <input id="pages" class="input" type="number" required maxlength="10000" placeholder="Pages">
-                    <div class="isread">
-                        <label for="is-read">Have you read it?</label>
-                        <input id="isRead" type="checkbox">
-                    </div>
-                    <button id="form-submit" type="submit">Submit</button>
-                </form>
-            </div>
-        </main>
-        <footer>
-            <h1>Footer</h1>
-        </footer>
+                <div class="txt_field">
+                    <input id="author" class="input" type="text" required maxlength="100">
+                    <span></span> 
+                    <label>Author</label>
+                </div>
+
+                <div class="txt_field">
+                    <input id="pages" class="input" type="number" required maxlength="10000">
+                    <span></span> 
+                    <label>Pages</label>
+                </div>
+
+                <div>
+                    <label for="is-read">Have you read it?</label>
+                    <input id="isRead" type="checkbox">
+                </div>
+
+                <button id="form-submit" type="submit">Submit</button>
+            </form>
+        </dialog>
     </body>
 </html>
